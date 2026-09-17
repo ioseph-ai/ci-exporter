@@ -19,4 +19,4 @@ lint:
 	golangci-lint run ./...
 
 run:
-	GITLAB_TOKEN=$${GITLAB_TOKEN:?set GITLAB_TOKEN} go run .
+	MODE=gitlab GITLAB_TOKEN=$${GITLAB_TOKEN:?set GITLAB_TOKEN} go run .
